@@ -23,6 +23,7 @@ try {
   var context = repl.start(promptPrefix + '> ').context;
   context.web3 = new Web3(new Web3.providers.HttpProvider(endpoint));
   context.eth = context.web3.eth;
+  context.avm = context.web3.avm;
   context.personal = context.web3.personal;
 } catch(error) {
   console.log(error);

@@ -32,6 +32,7 @@
 var version = require('../package.json').version;
 var core = require('aion-web3-core');
 var Eth = require('aion-web3-eth');
+var avm = require('aion-web3-avm-abi');
 var Net = require('aion-web3-net');
 var Personal = require('aion-web3-eth-personal');
 var utils = require('aion-web3-utils');
@@ -46,6 +47,7 @@ var Web3 = function Web3() {
     this.utils = utils;
 
     this.eth = new Eth(this);
+    this.avm = avm;
 
     // overwrite package setProvider
     var setProvider = this.setProvider;
@@ -60,6 +62,7 @@ var Web3 = function Web3() {
 
 Web3.version = version;
 Web3.utils = utils;
+Web3.avm = avm;
 Web3.modules = {
     Eth: Eth,
     Net: Net,

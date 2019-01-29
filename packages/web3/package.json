@@ -57,7 +57,8 @@
     "aion-web3-eth": "^1.1.4",
     "aion-web3-eth-personal": "^1.1.4",
     "aion-web3-net": "^1.1.4",
-    "aion-web3-utils": "^1.1.4"
+    "aion-web3-utils": "^1.1.4",
+    "aion-web3-avm-abi": "^1.1.4"
   },
   "gitHead": "b9adc81c487ef3be6e4a1cac9827b6224b61a95e"
 }
