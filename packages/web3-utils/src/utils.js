@@ -86,7 +86,7 @@ var toTwosComplement = function (number) {
  * @return {Boolean}
  */
 var isAddress = function (address) {
-    return aionLib.accounts.isAccountAddress(address);
+    return aionLib.accounts.isAccountAddress(address) || (/^(0x|0X)?0(F|f)[0-9a-f]{62}$/i.test(address))
     /*if (/^(0x|0X)?[0-9a-f]{64}$/i.test(address)) {
         return true;
     }
