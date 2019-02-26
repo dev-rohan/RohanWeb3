@@ -14,9 +14,9 @@ var source = "" +
 var tests = [{
 	args: [source],
 	formattedArgs: [source],
-    result: 123,
-    formattedResult: 123,
-    call: 'eth_compileSolidity' 
+  result: 123,
+  formattedResult: 123,
+  call: 'eth_compileSolidity' 
 }];
 
 
